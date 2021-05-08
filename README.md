@@ -1,12 +1,13 @@
 # Portfolio
 
-# 02 Advanced CSS: Portfolio
+# 08 Project 1: Professional Materials
 
-## Your Task
+## Requirements
 
-Build a **web application** from scratch, a **portfolio** page showcasing your skills and talents and to which you will add content as the course progresses.
-
-The application will use **advanced CSS**, including **flexbox**, **media queries**, and **variables**. It must also meet the **user story**, **acceptance criteria**, and **mockup** defined below.
+> Submit an updated portfolio featuring Project 1 and two exemplary homework assignments.
+> Submit an updated GitHub profile with pinned repositories featuring Project 1 and two exemplary assignments.
+> Submit an updated resume
+> Submit an updated LinkedIn profile
 
 ## User Story
 
