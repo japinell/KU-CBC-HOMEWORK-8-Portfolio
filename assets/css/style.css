@@ -30,6 +30,7 @@
 
 body {
   font-family: var(--body-font-family);
+  line-height: 1.7rem;
   /*font-size: var(--fsize);*/
   background-color: white;
 }
@@ -79,22 +80,6 @@ nav a:hover {
   height: 940px;
   width: var(--working-area);
   margin: auto;
-}
-
-main section div > img.family1 {
-  width: 240px;
-  height: auto;
-
-  border: 1px solid #dddddd;
-  border-radius: 15px;
-  padding: 5px;
-
-  display: inline-block;
-  margin-left: 0px;
-  margin-right: auto;
-  width: 50%;
-
-  /* display: inline-block; */
 }
 
 /* main section div div.polaroid,
