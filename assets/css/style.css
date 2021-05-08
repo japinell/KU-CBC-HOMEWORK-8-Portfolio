@@ -30,13 +30,8 @@
 
 body {
   font-family: var(--body-font-family);
-  font-size: var(--fsize);
+  /*font-size: var(--fsize);*/
   background-color: white;
-  background: linear-gradient(
-    180deg,
-    var(--chocoyo-yellow) 0%,
-    var(--chocoyo-green) 100%
-  );
 }
 
 img {
@@ -48,64 +43,24 @@ img {
   HEADER     
 */
 header {
-  /* background-image: url("../images/flowers.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
   background-color: var(--chocoyo-dark-green);
   color: var(--chocoyo-yellow);
   border: 1px dashed var(--chocoyo-dark-green);
-  border-radius: 10px;
-
-  /* border: 1px solid #dddddd; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  height: 100px;
-  width: var(--working-area);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-header > h1 {
-  font-family: var(--header-font-family);
-  color: white;
-  font-size: 2rem;
-  font-style: italic;
-  letter-spacing: 0.1rem;
-  text-align: center;
-
-  padding-top: 15px;
-  width: 100%;
 }
 
 header > nav {
   font-family: var(--nav-font-family);
   font-size: 1.5rem;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-
-  width: 100%;
-  padding: 15px;
 }
 
-header a {
+nav a {
   color: white;
   text-decoration: none;
-  display: inline-block;
-  margin-left: 25px;
 }
 
-header a:hover {
-  color: yellow;
-  border-bottom: 2px solid #00bb3ea9;
+nav a:hover {
+  color: white;
+  border-bottom: 2px solid yellow;
 }
 
 .hero {
@@ -503,7 +458,7 @@ footer a:hover {
 
   header,
   footer {
-    background-color: var(--chocoyo-green);
+    background-color: var(--chocoyo-dark-green);
     /* display: flex; */
     /* flex-direction: row; */
     /* align-items: center; */
