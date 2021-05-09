@@ -43,13 +43,28 @@ img {
 /*
   HEADER     
 */
+/* Set the border color to the desired color */
+/* .custom-toggler.navbar-toggler {
+  border-color: lightgreen;
+  background-color: black;
+} */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: var(--chocoyo-yellow);
+}
+
 header {
   background-color: var(--chocoyo-dark-green);
   color: var(--chocoyo-yellow);
   border: 1px dashed var(--chocoyo-dark-green);
 }
 
-header > nav {
+header > nav > button > span {
+  background-color: var(--chocoyo-yellow);
   font-family: var(--nav-font-family);
   font-size: 1.5rem;
 }
