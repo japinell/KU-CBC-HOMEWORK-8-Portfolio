@@ -2,7 +2,7 @@
   VARIABLES    
 */
 :root {
-  --working-area: 60%;
+  --working-area: 100%;
   --chocoyo-green: #276721;
   --chocoyo-dark-green: #0c1b07;
   --chocoyo-yellow: #969c24;
@@ -31,7 +31,6 @@
 body {
   font-family: var(--body-font-family);
   line-height: 1.7rem;
-  /*font-size: var(--fsize);*/
   background-color: white;
 }
 
@@ -43,12 +42,6 @@ img {
 /*
   HEADER     
 */
-/* Set the border color to the desired color */
-/* .custom-toggler.navbar-toggler {
-  border-color: lightgreen;
-  background-color: black;
-} */
-
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -61,12 +54,6 @@ header {
   background-color: var(--chocoyo-dark-green);
   color: var(--chocoyo-yellow);
   border: 1px dashed var(--chocoyo-dark-green);
-}
-
-header > nav > button > span {
-  background-color: var(--chocoyo-yellow);
-  font-family: var(--nav-font-family);
-  font-size: 1.5rem;
 }
 
 nav a {
@@ -125,243 +112,16 @@ main section.container div.project-card div.split > a:hover {
 /*
   MAIN
 */
-main {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; */
-
-  justify-content: center;
-  border: 1px dashed var(--chocoyo-dark-green);
-  border-radius: 10px;
-
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-
-  width: var(--working-area);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-main > h1 {
-  font-family: var(--body-font-family);
-  color: var(--chocoyo-yellow);
-  font-size: 2rem;
-  font-style: italic;
-  letter-spacing: 0.1rem;
-  text-align: center;
-
-  padding-top: 15px;
-  width: 100%;
-}
-
-/*
-  CONTENT   
-*/
-.container {
-  font-family: var(--nav-font-family);
-  background-color: #ffffff;
-  color: var(--chocoyo-dark-green);
-  margin-bottom: 0px;
-  padding: 15px;
-
-  /* border: 1px solid #dddddd; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.container .heading {
-  font-family: "Papyrus", "Montserrat", "Sans-Serif";
-  /* font-style: italic; */
-  font-weight: 200;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  text-align: left;
-
-  border-right: 1px solid var(--chocoyo-dark-green);
-
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.container .content {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5rem;
-  display: inline-block;
-
-  position: relative;
-  width: 100%;
-  padding: 15px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-
-.container .content > p {
-  padding-bottom: 15px;
-}
-
-.container .content > blockquote {
-  padding-left: 15px;
-  font-style: italic;
-}
-
-.container .content .project-card {
-  /* margin: 1rem; */
-  padding: 0;
-  border: 1px solid var(--chocoyo-yellow);
-  border-radius: 10px;
-}
-
-.container .content .project-card div > h4 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  margin: 0px;
-  padding: 0.5rem;
-  color: white;
-  background: var(--chocoyo-dark-green);
-  border-top-left-radius: 0.5rem;
-  padding-bottom: 15px;
-}
-
-.container .content .project-card div > img {
-  height: 100px;
-  width: var(--working-area);
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-
-.container .content .project-card div > h5 {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  padding: 0.5rem;
-  background-color: white;
-  opacity: 0.8;
-  text-align: center;
-}
-
-.container .project-card div > ul {
-  font-size: 1.1rem;
-  list-style-type: none;
-  display: inline-flex;
-  justify-content: center;
-
-  /* border-bottom: 1px solid var(--chocoyo-dark-green); */
-
-  flex-wrap: wrap;
-  margin: 0px;
-  padding: 1rem;
-  width: 100%;
-}
-
-.container .project-card ul > li {
-  color: white;
-  background-color: var(--chocoyo-dark-green);
-  text-align: center;
-  /* padding-top: 0.5rem; */
-  padding: 0.5rem;
-
-  flex: 1 0 5rem;
-  max-width: 10rem;
-  height: 2rem;
-
-  margin: 0.5rem;
-  border-radius: 1rem;
-}
-
-.container .project-card div a {
-  color: var(--flower-orange);
-  /* text-decoration-color: var(--chocoyo-yellow); */
-}
-
-.container .content .full {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 0 0 100%;
-  padding: 15px;
-}
-
-.container .content .full1 {
-  position: relative;
-  margin: 0px;
-}
-
-.container .content .split {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 0 0 50%;
-  padding: 15px;
-}
-
-.container a {
-  /* color: #ffffff; */
-  text-decoration: none;
-  display: inline-block;
-  margin-left: 25px;
-}
 
 /* FOOTER */
 footer {
-  /* background-image: url("../images/flowers.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-
-  /* border: 1px solid #dddddd; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   background-color: var(--chocoyo-dark-green);
   color: var(--chocoyo-yellow);
   border: 1px dashed var(--chocoyo-dark-green);
-  border-radius: 10px;
-
-  /* height: 150px; */
   width: var(--working-area);
   margin-right: auto;
   margin-left: auto;
-}
-
-footer1 > h1 {
-  font-family: var(--header-font-family);
-  color: white;
-  font-size: 1.5rem;
-  font-style: italic;
-  letter-spacing: 0.1rem;
-  text-align: center;
-
-  padding-top: 15px;
-  width: 100%;
-}
-
-footer > h2 {
-  font-family: var(--body-font-family);
-  color: white;
-  font-size: 0.75rem;
-  /* font-style: italic; */
-  font-weight: 75;
-  letter-spacing: 0.1rem;
-  text-align: left;
-
-  padding-left: 15px;
-  padding-top: 15px;
-  width: 100%;
 }
 
 footer > nav {
@@ -438,100 +198,4 @@ footer a:last-child::after {
 footer a:hover {
   border-bottom: 1px solid var(--chocoyo-green);
   color: yellow;
-}
-
-/* MEDIA QUERIES */
-/* 
-  Works well with Desktop, iPads, and Kindle Fire.
-
-  TODO:
-        Improve iPhone and Galaxy responsiveness.
-*/
-@media screen and (min-width: 0px) and (max-width: 1280px) {
-  :root {
-    --working-area: 100%;
-  }
-
-  header,
-  footer {
-    background-color: var(--chocoyo-dark-green);
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-  }
-
-  header > h1,
-  header > nav,
-  footer > h1,
-  footer > nav {
-    font-size: 1rem;
-  }
-
-  .hero {
-    font-size: 1rem;
-    /* display: none; */
-    /* transform: scale(0.5); */
-  }
-
-  main section div img {
-    transform: scale(0.75);
-  }
-
-  .header nav .heading {
-    font-size: 1rem;
-    text-align: center;
-    padding: 5px 5px;
-
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .header nav .content {
-    font-size: 1rem;
-    text-align: center;
-    padding: 5px 5px;
-
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .container .heading {
-    font-size: 1rem;
-    text-align: center;
-    padding: 5px 5px;
-
-    border-right: none;
-    border-bottom: 2px solid #00bb3ea9;
-
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .container .content {
-    font-size: 1rem;
-    text-align: center;
-    padding: 5px 5px;
-
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .footer nav .heading {
-    font-size: 1rem;
-    text-align: center;
-    padding: 5px 5px;
-
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .footer nav .content {
-    font-size: 1rem;
-    text-align: center;
-    padding: 5px 5px;
-
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
 }
