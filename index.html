@@ -1,450 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chocoyo Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg">
-        <h1 class="navbar-brand">Chocoyo Portfolio</h1>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="nav navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#about"
-                >About Me <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./assets/files/resume.pdf"
-                target="_blank"
-                >Resume</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Contact
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">E-Mail</a>
-                <a
-                  class="dropdown-item"
-                  href="https://linkedin.com/in/japinell"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-                <a
-                  class="dropdown-item"
-                  href="https://github.com/japinell"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- End of Navigation -->
-    </header>
-    <!-- End of Header -->
-    <!-- Main Picture -->
-    <figure class="hero"></figure>
-    <!-- End of Main Picture -->
-    <!-- Main -->
-    <main>
-      <!-- About Me -->
-      <section id="about">
-        <h1 class="display-4">
-          About Me
-          <button
-            class="btn btn-warning"
-            type="button"
-            data-toggle="collapse"
-            data-target="#aboutMe"
-            aria-expanded="false"
-            aria-controls="aboutMe"
-            id="showAboutMe"
-          >
-            <i
-              class="fas fa-chevron-up"
-              aria-hidden="true"
-              id="showAboutMeIcon"
-            ></i>
-          </button>
-        </h1>
-        <div class="card mb-3" id="aboutMe">
-          <div class="row no-gutters">
-            <div class="col-md-6">
-              <img
-                class="card-img"
-                src="./assets/images/office.jpg"
-                alt="Office"
-                width="50%"
-              />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chocoyo Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+      <h1 class="navbar-brand">Chocoyo Portfolio</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./assets/files/resume.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Contact
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">E-Mail</a>
+              <a class="dropdown-item" href="https://linkedin.com/in/japinell" target="_blank">LinkedIn</a>
+              <a class="dropdown-item" href="https://github.com/japinell" target="_blank">GitHub</a>
             </div>
-            <div class="col-md-6">
-              <div class="card-body text-justify">
-                <p class="card-text">
-                  My name is <strong>Rigo A. Pinell</strong>. I specialize in
-                  building applications for desktop, web, and mobile devices. I
-                  am currently enrolled in the
-                  <strong>Flex Stack Coding Boot Camp</strong> at
-                  <strong>Kansas University</strong> where I am learning to
-                  develop web and mobile applications using HTML, CSS,
-                  JavaScript, and many other frameworks and libraries including
-                  Bootstrap, JQuery, NodeJS, DayJS, Google Fonts, and Font
-                  Awesome.
-                </p>
-                <p class="card-text">
-                  On my spare time, I enjoy reading books, playing chess and
-                  basketball with family and friends, and, of course, investing
-                  quality time with my wife and my kids.
-                </p>
-                <p class="card-text">
-                  Interested in knowing more about the <em>cool</em> projects I
-                  am building? Check them out <a href="#projects">here</a>. Want
-                  to connect, follow, or contact me to know more about my
-                  professional career? Click <a href="#contact">here</a>.
-                </p>
-              </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+  </header>
+  <!-- End of Header -->
+  <!-- Main Picture -->
+  <figure class="hero"></figure>
+  <!-- End of Main Picture -->
+  <!-- Main -->
+  <main>
+    <!-- About Me -->
+    <section id="about">
+      <h1 class="display-4">
+        About Me
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#aboutMe"
+          aria-expanded="false" aria-controls="aboutMe" id="showAboutMe">
+          <i class="fas fa-chevron-up" aria-hidden="true" id="showAboutMeIcon"></i>
+        </button>
+      </h1>
+      <div class="card mb-3" id="aboutMe">
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <img class="card-img" src="./assets/images/office.jpg" alt="Office" width="50%" />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body text-justify">
+              <p class="card-text">
+                My name is <strong>Rigo A. Pinell</strong>. I specialize in
+                building applications for desktop, web, and mobile devices. I
+                am currently enrolled in the
+                <strong>Flex Stack Coding Boot Camp</strong> at
+                <strong>Kansas University</strong> where I am learning to
+                develop web and mobile applications using HTML, CSS,
+                JavaScript, and many other frameworks and libraries including
+                Bootstrap, JQuery, NodeJS, DayJS, Google Fonts, and Font
+                Awesome.
+              </p>
+              <p class="card-text">
+                On my spare time, I enjoy reading books, playing chess and
+                basketball with family and friends, and, of course, investing
+                quality time with my wife and my kids.
+              </p>
+              <p class="card-text">
+                Interested in knowing more about the <em>cool</em> projects I
+                am building? Check them out <a href="#projects">here</a>. Want
+                to connect, follow, or contact me to know more about my
+                professional career? Click <a href="#contact">here</a>.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End of About Me -->
+      </div>
+    </section>
+    <!-- End of About Me -->
+    <!-- Projects -->
+    <section id="projects">
+      <h1 class="display-4">
+        My Projects
+        <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#myProjects"
+          aria-expanded="false" aria-controls="myProjects" id="showMyProjects">
+          <i class="fas fa-chevron-up" aria-hidden="true" id="showMyProjectsIcon"></i>
+        </button>
+      </h1>
       <!-- Projects -->
-      <section id="projects">
-        <h1 class="display-4">
-          My Projects
-          <button
-            class="btn btn-warning"
-            type="button"
-            data-toggle="collapse"
-            data-target="#myProjects"
-            aria-expanded="false"
-            aria-controls="myProjects"
-            id="showMyProjects"
-          >
-            <i
-              class="fas fa-chevron-up"
-              aria-hidden="true"
-              id="showMyProjectsIcon"
-            ></i>
-          </button>
-        </h1>
-        <div class="collapse" id="myProjects">
-          <div class="row">
-            <!-- Project 1 -->
-            <div
-              class="row d-flex flex-row justify-content-around col-12 text-center"
-            >
-              <div class="card-header">
+      <div class="card mb-3" id="myProjects">
+        <!-- Project 1 -->
+        <div class="row col-12 no-gutters">
+          <div class="col-md-6">
+            <div class="card-header">
+              <img class="card-img" src="./assets/images/project1.png" alt="Delivery Done Right" width="50%" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-body text-justify">
+              <div class="text-center">
                 <strong>Project 1 - Delivery Done Right</strong>
               </div>
-              <img
-                class="card-img-top"
-                src="./assets/images/project1.png"
-                alt="Delivery Done Right"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Web application that allows users to search and filter
-                  restaurants by predefined criteria. Features include a Google
-                  Map and a list of restaurants near by the user, whether the
-                  restaurant has an option to deliver, and nutrition information
-                  of the restaurant offering.
-                </p>
-                <a
-                  href="https://github.com/japinell/KU-CBC-Project-1-Delivery-Done-Right"
-                  target="_blank"
-                  class="btn btn-warning"
-                  >GitHub</a
-                >
-                <a
-                  href="https://japinell.github.io/KU-CBC-Project-1-Delivery-Done-Right/"
-                  target="_blank"
-                  class="btn btn-warning"
-                  >Website</a
-                >
-              </div>
-              <div class="card-body">
-                <ul
-                  class="d-flex flex-row justify-content-around list-group list-group-horizontal"
-                >
-                  <li><span class="badge badge-secondary p-3">HTML</span></li>
-                  <li><span class="badge badge-secondary p-3">CSS</span></li>
-                  <li>
-                    <span class="badge badge-secondary p-3">JavaScript</span>
-                  </li>
-                  <li>
-                    <span class="badge badge-secondary p-3">BootStrap</span>
-                  </li>
-                  <li><span class="badge badge-secondary p-3">JQuery</span></li>
-                </ul>
-              </div>
-            </div>
-            <!-- End of Project 1 -->
-          </div>
-          <div class="row">
-            <!-- Project 2 -->
-            <div
-              class="row d-flex flex-row justify-content-around col-6 text-center"
-            >
-              <div class="card-header">
-                <strong>Project 2 - Weather Dashboard</strong>
-              </div>
-              <img
-                class="card-img-top"
-                src="./assets/images/weather-dashboard.png"
-                alt="Weather Dashboard"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  A weather dashboard that runs in the browser and use the
-                  <strong>OpenWeather One Call API</strong> to retrieve weather
-                  data for cities. The application renders data using HTML
-                  generated dynamically and uses localStorage to store
-                  persistent data.
-                </p>
-                <a
-                  href="https://github.com/japinell/KU-CBC-Homework-6-Weather-Dashboard/"
-                  target="_blank"
-                  class="btn btn-warning"
-                  >GitHub</a
-                >
-                <a
-                  href="https://japinell.github.io/KU-CBC-Homework-6-Weather-Dashboard/"
-                  target="_blank"
-                  class="btn btn-warning"
-                  >Website</a
-                >
-              </div>
-              <div class="card-body">
-                <ul
-                  class="d-flex flex-row justify-content-around list-group list-group-horizontal"
-                >
-                  <li><span class="badge badge-secondary p-3">HTML</span></li>
-                  <li><span class="badge badge-secondary p-3">CSS</span></li>
-                  <li>
-                    <span class="badge badge-secondary p-3">JavaScript</span>
-                  </li>
-                  <li>
-                    <span class="badge badge-secondary p-3">BootStrap</span>
-                  </li>
-                  <li><span class="badge badge-secondary p-3">JQuery</span></li>
-                </ul>
-              </div>
-            </div>
-            <!-- End of Project 2 -->
-            <!-- Project 3 -->
-            <div
-              class="row d-flex flex-row justify-content-around col-6 text-center"
-            >
-              <div class="card-header">
-                <strong>Project 3 - JavaScript Fundamentals Code Quiz</strong>
-              </div>
-              <img
-                class="card-img-top"
-                src="./assets/images/code-quiz.png"
-                alt="Weather Dashboard"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  A timed coding quiz with multiple-choice questions. This web
-                  application runs in the browser and features dynamically
-                  updated HTML and CSS powered by JavaScript. It has a clean,
-                  polished, and responsive user interface.
-                </p>
-                <a
-                  href="https://github.com/japinell/KU-CBC-Homework-4-Code-Quiz/"
-                  target="_blank"
-                  class="btn btn-warning"
-                  >GitHub</a
-                >
-                <a
-                  href="https://japinell.github.io/KU-CBC-Homework-4-Code-Quiz/"
-                  target="_blank"
-                  class="btn btn-warning"
-                  >Website</a
-                >
-              </div>
-              <div class="card-body">
-                <ul
-                  class="d-flex flex-row justify-content-around list-group list-group-horizontal"
-                >
-                  <li><span class="badge badge-secondary p-3">HTML</span></li>
-                  <li><span class="badge badge-secondary p-3">CSS</span></li>
-                  <li>
-                    <span class="badge badge-secondary p-3">JavaScript</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- End of Project 3 -->
-          </div>
-        </div>
-        <!-- Project 1 -->
-        <div class="card col-12 mb-3" id="myProjects">
-          <div class="row no-gutters">
-            <div class="col-md-6">
-              <img
-                class="card-img"
-                src="./assets/images/project1.png"
-                alt="Delivery Done Right"
-                width="50%"
-              />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body text-justify">
-                <div class="card-header text-center">
-                  <strong>Project 1 - Delivery Done Right</strong>
-                </div>
-                <p class="card-text">
-                  Web application that allows users to search and filter
-                  restaurants by predefined input fields, including
-                  <em>food description</em>, <em>zipcode</em>, and
-                  <em>distance radius</em>. Features include a Google Map and a
-                  list of restaurants near by the user, information listing
-                  whether the restaurant has an option to deliver, and
-                  nutritional facts about the food.
-                </p>
-                <p class="card-text">
-                  Check out the application repository in
-                  <a
-                    href="https://github.com/japinell/KU-CBC-Project-1-Delivery-Done-Right"
-                    target="_blank"
-                    >GitHub</a
-                  >, and the live application in
-                  <a
-                    href="https://japinell.github.io/KU-CBC-Project-1-Delivery-Done-Right/"
-                    target="_blank"
-                    >GitHub Pages</a
-                  >.
-                </p>
-                <p class="card-text">
-                  The application uses the following technologies:
-                </p>
-                <ul
-                  class="d-flex flex-row justify-content-around list-group list-group-horizontal"
-                >
-                  <li><span class="badge badge-secondary p-2">HTML</span></li>
-                  <li><span class="badge badge-secondary p-2">CSS</span></li>
-                  <li>
-                    <span class="badge badge-secondary p-2">JavaScript</span>
-                  </li>
-                  <li>
-                    <span class="badge badge-secondary p-2">BootStrap</span>
-                  </li>
-                  <li><span class="badge badge-secondary p-2">JQuery</span></li>
-                </ul>
-              </div>
+              <p class="card-text">
+                Web application allowing users to search and filter
+                restaurants by predefined input fields, including
+                <em>food description</em>, <em>zipcode</em>, and
+                <em>distance radius</em>. Features include a Google Map and a
+                list of restaurants near by the user, information listing
+                whether the restaurant has an option to deliver, and
+                nutritional facts about the food (to be improved in a future release).
+              </p>
+              <p class="card-text">
+                Check out the live application in
+                <a href="https://japinell.github.io/KU-CBC-Project-1-Delivery-Done-Right/" target="_blank">GitHub
+                  Pages</a>, and the code in
+                <a href="https://github.com/japinell/KU-CBC-Project-1-Delivery-Done-Right" target="_blank">GitHub
+                  Repository</a>.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-2">HTML</span></li>
+                <li><span class="badge badge-secondary p-2">CSS</span></li>
+                <li>
+                  <span class="badge badge-secondary p-2">JavaScript</span>
+                </li>
+                <li>
+                  <span class="badge badge-secondary p-2">BootStrap</span>
+                </li>
+                <li><span class="badge badge-secondary p-2">JQuery</span></li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- End of Project 1-->
-      </section>
-      <!-- End of Projects -->
-    </main>
-    <!-- End of Main -->
-    <!-- Footer -->
-    <footer id="contact">
-      <!-- Logo -->
-      <h1>Contact Me</h1>
-      <h2>
-        These are the ways you can find me, connect with me, or follow me:
-      </h2>
-      <!-- End of Logo -->
-      <!-- Navigation -->
-      <nav>
-        <!-- Links -->
-        <div class="content">
-          <a href="" target="" class="phone"> 1-800-123-4567 </a>
-          <a href="mailto:customer@chocoyo.com" target="_blank" class="email">
-            customer@chocoyo.com
-          </a>
-          <a href="https://github.com/japinell" target="_blank" class="github"
-            >https://github.com/japinell</a
-          >
-          <a href="https://twitter.com/japinell" target="_blank" class="twitter"
-            >https://twitter.com/japinell</a
-          >
-          <a href="https://spotify.com/japinell" target="_blank" class="spotify"
-            >https://spotify.com/japinell</a
-          >
+        <!-- End of Project 1 -->
+        <!-- Exemplary Homeworks -->
+        <div class="row no-gutters">
+          <!-- Exemplary Homework 1 -->
+          <div class="col-md-6">
+            <div class="card-header">
+              <img class="card-img" src="./assets/images/weather-dashboard.png" alt="Weather Dashboard" width="50%" />
+            </div>
+            <div class="card-body text-justify">
+              <p class="card-text text-center">
+                <strong>Weather Dashboard</strong>
+              </p>
+              <p class="card-text">
+                Weather dashboard that runs in the browser and use the
+                <strong>OpenWeather One Call API</strong> to retrieve weather
+                data for cities. The application renders data using HTML
+                generated dynamically and uses localStorage to store
+                persistent data.
+              </p>
+              <p class="card-text">
+                Check out the live application in
+                <a href="https://japinell.github.io/KU-CBC-Homework-6-Weather-Dashboard/" target="_blank">GitHub
+                  Pages</a>, and the code in
+                <a href="https://github.com/japinell/KU-CBC-Homework-6-Weather-Dashboard/" target="_blank">GitHub
+                  Repository</a>.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-2">HTML</span></li>
+                <li><span class="badge badge-secondary p-2">CSS</span></li>
+                <li>
+                  <span class="badge badge-secondary p-2">JavaScript</span>
+                </li>
+                <li>
+                  <span class="badge badge-secondary p-2">BootStrap</span>
+                </li>
+                <li><span class="badge badge-secondary p-2">JQuery</span></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End of Exemplary Homework 1 -->
+          <!-- Exemplary Homework 2 -->
+          <div class="col-md-6">
+            <div class="card-header">
+              <img class="card-img" src="./assets/images/code-quiz.png" alt="Code Quiz" width="50%" />
+            </div>
+            <div class="card-body text-justify">
+              <p class="card-text text-center">
+                <strong>JavaScript Fundamentals Code Quiz</strong>
+              </p>
+              <p class="card-text">
+                Timed coding quiz with multiple-choice questions. The
+                application runs in the browser and features dynamically
+                updated HTML and CSS powered by JavaScript. It has a clean,
+                polished, and responsive user interface.
+              </p>
+              <p class="card-text">
+                Check out the live application in
+                <a href="https://japinell.github.io/KU-CBC-Homework-4-Code-Quiz/" target="_blank">GitHub Pages</a>, and
+                the code in
+                <a href="https://github.com/japinell/KU-CBC-Homework-4-Code-Quiz/" target="_blank">GitHub
+                  Repository</a>.
+              </p>
+              <p class="card-text">
+                The application uses the following technologies:
+              </p>
+              <ul class="d-flex flex-row justify-content-around list-group list-group-horizontal">
+                <li><span class="badge badge-secondary p-3">HTML</span></li>
+                <li><span class="badge badge-secondary p-3">CSS</span></li>
+                <li>
+                  <span class="badge badge-secondary p-3">JavaScript</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- End of Exemplary Homework 2 -->          
         </div>
-        <!-- End of Links -->
-      </nav>
-      <!-- End of Navigation -->
-    </footer>
-    <!-- End of Header -->
-    <!-- JavaScript Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.4/plugin/weekOfYear.js"></script>
-    <script>
-      dayjs.extend(window.dayjs_plugin_advancedFormat);
-      dayjs.extend(window.dayjs_plugin_weekOfYear);
-    </script>
-    <script src="./assets/js/script.js"></script>
-    <!-- End of JavaScript Libraries -->
-  </body>
+        <!-- End of Exemplary Homeworks -->
+    </section>
+    <!-- End of Projects -->
+  </main>
+  <!-- End of Main -->
+  <!-- Footer -->
+  <footer id="contact">
+    <!-- Logo -->
+    <h1>Contact Me</h1>
+    <h2>
+      These are the ways you can find me, connect with me, or follow me:
+    </h2>
+    <!-- End of Logo -->
+    <!-- Navigation -->
+    <nav>
+      <!-- Links -->
+      <div class="content">
+        <a href="" target="" class="phone"> 1-800-123-4567 </a>
+        <a href="mailto:customer@chocoyo.com" target="_blank" class="email">
+          customer@chocoyo.com
+        </a>
+        <a href="https://github.com/japinell" target="_blank" class="github">https://github.com/japinell</a>
+        <a href="https://twitter.com/japinell" target="_blank" class="twitter">https://twitter.com/japinell</a>
+        <a href="https://spotify.com/japinell" target="_blank" class="spotify">https://spotify.com/japinell</a>
+      </div>
+      <!-- End of Links -->
+    </nav>
+    <!-- End of Navigation -->
+  </footer>
+  <!-- End of Header -->
+  <!-- JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/dayjs@1.10.4/dayjs.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.10.4/plugin/advancedFormat.js"></script>
+  <script src="https://unpkg.com/dayjs@1.10.4/plugin/weekOfYear.js"></script>
+  <script>
+    dayjs.extend(window.dayjs_plugin_advancedFormat);
+    dayjs.extend(window.dayjs_plugin_weekOfYear);
+  </script>
+  <script src="./assets/js/script.js"></script>
+  <!-- End of JavaScript Libraries -->
+</body>
+
 </html>
